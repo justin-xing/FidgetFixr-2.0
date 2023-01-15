@@ -106,4 +106,9 @@ body {
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
+    animation: pop 0.3s linear 1;
 }
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+  }
