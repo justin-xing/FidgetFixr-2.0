@@ -1,10 +1,39 @@
-// upload functionality
-const file = document.getElementById('file');
-const upload = document.getElementById('upload');
-    const status = document.getElementById('status');
-upload.addEventListener('click', () => {
-    console.log('clicked the upload button!');
-})
+// Upload file
+function uploadFile() {
+
+    var files = document.getElementById("file").files;
+ 
+    if(files.length > 0 ){
+ 
+       var formData = new FormData();
+       formData.append("file", files[0]);
+ 
+       var xhttp = new XMLHttpRequest();
+ 
+       // Set POST method and ajax file path
+       xhttp.open("POST", "ajaxfile.php", true);
+ 
+       // call on request changes state
+       xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+ 
+            var response = this.responseText;
+            if(response == 1){
+               alert("Upload successfully.");
+            }else{
+               alert("File not uploaded.");
+            }
+          }
+       };
+ 
+       // Send request with data
+       xhttp.send(formData);
+ 
+    }else{
+       alert("Please select a file");
+    }
+ 
+ }
 
 // Replace this with the note dictionary
 const notes = {
@@ -27,6 +56,7 @@ const initial = document.getElementById('initialDisplay');
 
 // Function to flip card
 function flipCard () {
+    card.classList.add('transition');
     txt.textContent = answer;
 };
 
@@ -53,13 +83,15 @@ function nextCard () {
 
 const next = document.querySelector('.next');
 
-// Function to call when upload is clicked
-function uploadClick () {
+// Function to call when convert is clicked
+function convertClick () {
     initial.classList.add('hidden');
     next.classList.remove('hidden');
     nextCard();
 };
 
-upload.addEventListener('click', uploadClick);
+const convert = document.getElementById('convert');
+
+convert.addEventListener('click', convertClick);
 
 next.addEventListener('click', nextCard);

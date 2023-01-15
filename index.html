@@ -17,8 +17,12 @@
             <div id="initialDisplay">
                 <div class="prompt">upload your file</div>
                 <div class="buttons">
-                    <input type="file" id="file" accept="application/pdf">
-                    <button id="upload">Upload</button>
+                    <input type="file" name="file" id="file">
+                    <input type="button" id="btn_uploadfile" 
+                       value="Upload" 
+                       onclick="uploadFile();" >
+                    <button id="convert">Convert</button>
+                    <small id="status"></small>
                 </div>
             </div>
         </div>

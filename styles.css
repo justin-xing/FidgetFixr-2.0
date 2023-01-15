@@ -53,7 +53,7 @@ body {
     width: 80vw;
     border-style: none;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,6 +86,10 @@ body {
     overflow: hidden;
 }
 
+.card:hover {
+    cursor: pointer;
+}
+
 .next:hover {
     background-color:rgb(115, 115, 209);
     cursor: pointer;
@@ -93,4 +97,11 @@ body {
 
 #upload {
     cursor: pointer;
+}
+
+.transition {
+    background-color: rgb(219, 219, 231);
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
