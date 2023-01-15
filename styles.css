@@ -102,10 +102,6 @@ body {
 }
 
 .transition {
-    background-color: rgb(219, 219, 231);
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
     animation: pop 0.3s linear 1;
 }
 
