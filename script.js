@@ -1,39 +1,12 @@
-// Upload file
-function uploadFile() {
-
-    var files = document.getElementById("file").files;
- 
-    if(files.length > 0 ){
- 
-       var formData = new FormData();
-       formData.append("file", files[0]);
- 
-       var xhttp = new XMLHttpRequest();
- 
-       // Set POST method and ajax file path
-       xhttp.open("POST", "ajaxfile.php", true);
- 
-       // call on request changes state
-       xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
- 
-            var response = this.responseText;
-            if(response == 1){
-               alert("Upload successfully.");
-            }else{
-               alert("File not uploaded.");
-            }
-          }
-       };
- 
-       // Send request with data
-       xhttp.send(formData);
- 
-    }else{
-       alert("Please select a file");
-    }
- 
- }
+let input = document.getElementById("input-file");
+input.addEventListener("change", function() {
+    let file = input.files[0];
+    let formData = new FormData();
+    formData.append("file", file);
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "upload");
+    xhr.send(formData);
+});
 
 // Replace this with the note dictionary
 const notes = {
