@@ -5,6 +5,7 @@ html {
 }
 
 #myHeader {
+    padding-top: 10vh;
     height: 20vh;
     color: white;
     font-size: 120px;
@@ -23,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
 }
 
 #initialDisplay {
@@ -31,6 +32,7 @@ body {
     flex-direction: column;
     gap: 50px;
     align-items: center;
+    overflow:hidden;
 }
 
 .prompt {
@@ -45,4 +47,24 @@ body {
 .buttons {
     display: inline;
     height: 10vw;
+}
+
+.hidden {
+    height: 0vh;
+}
+
+.card {
+    height: 60vh;
+    width: 80vw;
+    border-style: none;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    font-size: 5vw;
+    
 }

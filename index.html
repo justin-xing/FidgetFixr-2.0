@@ -5,28 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>FlashNotes</title>
 </head>
 <body>
     <div id="myHeader">
-        <div class="headText">FlashNotes</div>
+        <div class="headText">FlashNotes.</div>
     </div>
     <div class="content">
         <div id="initialDisplay">
             <div class="prompt">upload your file</div>
             <div class="buttons">
-                <input type="file" id="file" class="hidden"/>
+                <input type="file" id="file"/>
                 <button id="upload">Upload</button>
             </div>
         </div>
+        <div id="cardBox">
+        </div>
+        <button id="next" class="hidden">=></button>
     </div>
-    <script>
-        const file = document.getElementById('file');
-        const upload = document.getElementById('upload');
-            const status = document.getElementById('status');
-        upload.addEventListener('click', () => {
-            console.log('clicked the upload button!');
-        })
-    </script>
 </body>
 </html>
