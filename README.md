@@ -1,4 +1,4 @@
-# Name-In-Progress 
+# FidgetFixr 2.0
 ### Built for DeltaHacks IX
 ###### Project By: Justin Xing, Spring Fu, Daniel Locke and Aran Saseelan
 
