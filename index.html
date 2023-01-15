@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="index.js" defer></script>
     <title>FlashNotes</title>
 </head>
 <body>
@@ -17,7 +18,10 @@
             <div id="initialDisplay">
                 <div class="prompt">upload your file</div>
                 <div class="buttons">
-                    <input type="file" id="input-file">
+                    <form method='post' action='upload' enctype="multipart/form-data">
+                        <input type='file' name='sampleFile'>
+                        <input type='submit'>
+                    </form>
                     <button id="convert">Convert</button>
                     <small id="status"></small>
                 </div>
