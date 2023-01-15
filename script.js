@@ -1,7 +1,7 @@
 // Replace this with the note dictionary from backend
 const notes = {
     'Goats cheese': ' Goat cheese, or chèvre from French fromage de chèvre is cheese made from goat milk.',
-    'Nutritional facts:': 'Goat milk has a higher proportion of medium-chain fatty acids.',
+    'Nutritional facts': 'Goat milk has a higher proportion of medium-chain fatty acids.',
     'Rubing cheese': ' Comes from the Yunnan Province of China and is very similar to paneer which is a cows cheese from India',
     'The grand history': 'First created by aliens on the planet Neptune after the Netherlands sent a probe into space in 1749 containing 3 young goats',
     'Concept 6: Information pertaining to concept 6': 'Words, words, words beautiful words, purely awesome words',
@@ -25,11 +25,18 @@ function flipCard () {
     txt.textContent = answer;
 };
 
+ const pill = document.querySelector('.pill');
+ const next = document.querySelector('.next');
+ const wrapper = document.querySelector('.hi');
+
 // Function to call when next button is clicked
 function nextCard () {
     // Reload page when flashcards run out
     if (n >= entries.length) {
-        location.reload();
+        cardBox.textContent = '';
+        pill.classList.remove('hidden');
+        next.classList.add('hidden');
+        wrapper.classList.add('rainbow');
         return;
     };
     cardBox.textContent = '';
@@ -45,8 +52,6 @@ function nextCard () {
     cardBox.appendChild(card);
     n++;
 };
-
-const next = document.querySelector('.next');
 
 // Function to call when convert is clicked
 function convertClick () {

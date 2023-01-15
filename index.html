@@ -8,26 +8,32 @@
     <title>FlashNotes</title>
 </head>
 <body>
-    <div id="myHeader">
-        <div class="headText">flashBytes.</div>
-    </div>
-    <div class="container">
-        <div class="content">
-            <div id="initialDisplay">
-                <div class="prompt">upload your file</div>
-                <div class="buttons">
-                    <form method='post' action='upload' enctype="multipart/form-data">
-                        <input type='file' name='sampleFile'>
-                        <input type='submit'>
-                    </form>
+    <div class="hi">
+        <div id="myHeader">
+            <div class="headText">FidgetFixr 2.0</div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div id="initialDisplay">
+                    <div class="prompt">upload your file</div>
+                    <div class="buttons">
+                        <form method='post' action='upload' enctype="multipart/form-data">
+                            <input type='file' name='sampleFile'>
+                            <input type='submit'>
+                        </form>
+                    </div>
+                    <button id="convert">Convert</button>
                 </div>
-                <button id="convert">Convert</button>
             </div>
-        </div>
-        <div id="cardBox">
-        </div>
-        <div class="next hidden">
-            continue
+            <div id="cardBox">
+            </div>
+            <div class="next hidden">
+                continue
+            </div>
+            <div class="hidden pill">
+                <img src="elements/mike.png">
+                <div>Take your pills!</div>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>
