@@ -1,7 +1,7 @@
 // Replace this with the note dictionary from backend
 const notes = {
-    'Goats cheese': ' Goat cheese, or chèvre from French fromage de chèvre is cheese made from goat milk. It is also high in calcium, vitamins A and K, phosphorus, thiamin and niacin. Goat milk and, therefore, cheeses contain anti-inflammatory enzymes.',
-    'Nutritional facts': 'Goat milk has a higher proportion of medium-chain fatty acids. It is also high in calcium, vitamins A and K, phosphorus, thiamin and niacin. Goat milk and, therefore, cheeses contain anti-inflammatory enzymes.',
+    'Goats cheese': ' Goat cheese, or chèvre from French fromage de chèvre is cheese made from goat milk.',
+    'Nutritional facts': 'Goat milk has a higher proportion of medium-chain fatty acids.',
     'The grand history': 'First created by aliens on the planet Neptune after the Netherlands sent a probe into space in 1749 containing 3 young goats.',
     'Concept 6: Information pertaining to concept 6': 'Words, words, words beautiful words, purely awesome words',
 };
