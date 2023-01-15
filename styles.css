@@ -61,7 +61,8 @@ body {
 }
 
 .txt {
-    font-size: 5vw;   
+    text-align: center;
+    font-size: 4vw;   
 }
 
 .next {

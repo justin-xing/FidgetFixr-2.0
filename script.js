@@ -1,8 +1,10 @@
-// Replace this with the note dictionary
+// Replace this with the note dictionary from backend
 const notes = {
-    'Racket': 'Functional programming',
-    'Python': 'Object oriented',
-    'cd': 'Change directory',
+    'Goats cheese': ' Goat cheese, or chèvre from French fromage de chèvre is cheese made from goat milk.',
+    'Nutritional facts:': 'Goat milk has a higher proportion of medium-chain fatty acids.',
+    'Rubing cheese': ' Comes from the Yunnan Province of China and is very similar to paneer which is a cows cheese from India',
+    'The grand history': 'First created by aliens on the planet Neptune after the Netherlands sent a probe into space in 1749 containing 3 young goats',
+    'Concept 6: Information pertaining to concept 6': 'Words, words, words beautiful words, purely awesome words',
 };
 
 // Convert notes to an array of arrays
