@@ -3,7 +3,7 @@ const notes = {
     'Goats cheese': ' Goat cheese, or chèvre from French fromage de chèvre is cheese made from goat milk.',
     'Nutritional facts': 'Goat milk has a higher proportion of medium-chain fatty acids.',
     'The grand history': 'First created by aliens on the planet Neptune after the Netherlands sent a probe into space in 1749 containing 3 young goats.',
-    'Concept 6: Information pertaining to concept 6': 'Words, words, words beautiful words, purely awesome words',
+    'Concept 6': 'Information pertaining to concept 6 Words, words, words beautiful words, purely awesome words',
 };
 
 // Convert notes to an array of arrays
