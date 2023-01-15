@@ -32,6 +32,11 @@ function flipCard () {
 
 // Function to call when next button is clicked
 function nextCard () {
+    // Reload page when flashcards run out
+    if (n >= entries.length) {
+        location.reload();
+        return;
+    };
     cardBox.textContent = '';
     card = document.createElement('div');
     card.classList.add('card');
@@ -46,7 +51,7 @@ function nextCard () {
     n++;
 };
 
-const next = document.getElementById('next');
+const next = document.querySelector('.next');
 
 // Function to call when upload is clicked
 function uploadClick () {
@@ -56,7 +61,5 @@ function uploadClick () {
 };
 
 upload.addEventListener('click', uploadClick);
-
-
 
 next.addEventListener('click', nextCard);

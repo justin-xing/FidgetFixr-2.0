@@ -10,19 +10,23 @@
 </head>
 <body>
     <div id="myHeader">
-        <div class="headText">FlashNotes.</div>
+        <div class="headText">flashNotes.</div>
     </div>
-    <div class="content">
-        <div id="initialDisplay">
-            <div class="prompt">upload your file</div>
-            <div class="buttons">
-                <input type="file" id="file"/>
-                <button id="upload">Upload</button>
+    <div class="container">
+        <div class="content">
+            <div id="initialDisplay">
+                <div class="prompt">upload your file</div>
+                <div class="buttons">
+                    <input type="file" id="file" accept="application/pdf">
+                    <button id="upload">Upload</button>
+                </div>
             </div>
         </div>
         <div id="cardBox">
         </div>
-        <button id="next" class="hidden">=></button>
+        <div class="next hidden">
+            continue
+        </div>
     </div>
 </body>
 </html>
